@@ -34,14 +34,15 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
+                <EditText
                     style="@style/edt_dangnhap"
-                    android:hint="@string/email"></TextView>
+                    android:hint="@string/email"></EditText>
 
-                <TextView
+                <EditText
+                    android:inputType="textPassword"
                     android:drawableRight="@drawable/anpass"
                     style="@style/edt_dangnhap"
-                    android:hint="Mật khẩu"></TextView>
+                    android:hint="Mật khẩu"></EditText>
 
 
             </LinearLayout>
