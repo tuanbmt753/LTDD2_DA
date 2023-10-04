@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="hoTen">Họ và tên</string>
+    <string name="ngay">Ngày sinh</string>
+    <string name="email">E-mail</string>
+    <string name="cmnd">CMND</string>
+    <string name="sdt">Số điện thoại</string>
 </resources>

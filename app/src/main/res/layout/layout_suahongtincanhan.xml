@@ -78,36 +78,31 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
+                <EditText
                     style="@style/edt_text"
-                    android:hint="Họ và tên"></TextView>
+                    android:hint="@string/hoTen"></EditText>
 
-                <TextView
+                <EditText
                     style="@style/edt_text"
-                    android:hint="Ngày sinh"></TextView>
+                    android:hint="@string/ngay"></EditText>
 
-                <TextView
+                <EditText
                     style="@style/edt_text"
-                    android:hint="E-mail"></TextView>
+                    android:hint="@string/email"></EditText>
             </LinearLayout>
         </LinearLayout>
 
-        <TextView
+        <EditText
             style="@style/edt_text"
-            android:hint="E-mail"></TextView>
+            android:hint="@string/cmnd"></EditText>
 
-        <TextView
+        <EditText
             style="@style/edt_text"
-            android:hint="Số điện thoại"></TextView>
+            android:hint="@string/sdt"></EditText>
         <Button
-            android:background="@drawable/bg_button1"
-            android:textSize="10dp"
-            android:text="Sửa"
-            android:textColor="#fff"
-            android:gravity="center"
             android:layout_gravity="right"
-            android:layout_width="87"
-            android:layout_height="28dp"></Button>
+            android:text="Sửa"
+            style="@style/taikhoan_button"></Button>
     </LinearLayout>
 
 </LinearLayout>

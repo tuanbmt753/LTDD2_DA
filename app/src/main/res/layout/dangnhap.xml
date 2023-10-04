@@ -4,51 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#011432"
-        android:gravity="center"
-        android:orientation="horizontal">
+  
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="20dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/menu"></ImageView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Thông tin cá nhân"
-            android:textColor="#FFF"
-            android:textSize="15dp"></TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:gravity="center"
-            android:text="Hủy"
-            android:textColor="#FFF"
-            android:textSize="15dp"></TextView>
-
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Thông tin cá nhân"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_width="140dp"
+        android:layout_height="80dp"></ImageView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,15 +27,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/bg_taikhoan"
-                android:padding="1dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/hinhtaikhoan"></ImageView>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -79,35 +35,55 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/edt_text"
-                    android:hint="Họ và tên"></TextView>
+                    style="@style/edt_dangnhap"
+                    android:hint="@string/email"></TextView>
 
                 <TextView
-                    style="@style/edt_text"
-                    android:hint="Ngày sinh"></TextView>
+                    android:drawableRight="@drawable/anpass"
+                    style="@style/edt_dangnhap"
+                    android:hint="Mật khẩu"></TextView>
 
-                <TextView
-                    style="@style/edt_text"
-                    android:hint="E-mail"></TextView>
+
             </LinearLayout>
+
         </LinearLayout>
 
         <TextView
-            style="@style/edt_text"
-            android:hint="E-mail"></TextView>
-
-        <TextView
-            style="@style/edt_text"
-            android:hint="Số điện thoại"></TextView>
-        <Button
-            android:background="@drawable/bg_button1"
-            android:textSize="10dp"
-            android:text="Sửa"
-            android:textColor="#fff"
-            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="#001111"
             android:layout_gravity="right"
-            android:layout_width="87"
-            android:layout_height="28dp"></Button>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:layout_marginBottom="10dp"></TextView>
+        <Button
+            android:text="Đăng nhập"
+            style="@style/btn_dangnhap"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Bạn chưa tài khoản?"
+            android:textColor="#001111"
+            android:textSize="14dp"></TextView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Đăng ký"
+            android:textStyle="bold"
+            android:textColor="#15633A"
+            android:textSize="14dp"></TextView>
     </LinearLayout>
 
 </LinearLayout>
