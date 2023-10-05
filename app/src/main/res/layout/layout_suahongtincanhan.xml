@@ -40,14 +40,9 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Thông tin cá nhân"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+
+        style="@style/tv_tieudethongtincanhan"
+        android:text="Thông tin cá nhân" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -99,10 +94,11 @@
         <EditText
             style="@style/edt_text"
             android:hint="@string/sdt"></EditText>
+
         <Button
+            style="@style/taikhoan_button"
             android:layout_gravity="right"
-            android:text="Sửa"
-            style="@style/taikhoan_button"></Button>
+            android:text="Sửa"></Button>
     </LinearLayout>
 
 </LinearLayout>

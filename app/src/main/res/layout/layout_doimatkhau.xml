@@ -4,15 +4,39 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#011432"
+        android:gravity="center"
+        android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tài khoản"
+            android:textColor="#FFF"
+            android:textSize="15dp"></TextView>
+    </LinearLayout>
 
     <ImageView
-        android:layout_marginTop="50dp"
-        android:src="@drawable/logo"
-        android:scaleType="fitXY"
-        android:layout_gravity="center"
         android:layout_width="140dp"
-        android:layout_height="80dp"></ImageView>
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"></ImageView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,7 +52,6 @@
             android:orientation="horizontal">
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -36,19 +59,15 @@
 
                 <EditText
                     style="@style/edt_dangnhap"
-                    android:hint="@string/email"></EditText>
+                    android:drawableRight="@drawable/anpass"
+                    android:hint="Mật khẩu"
+                    android:inputType="textPassword"></EditText>
 
                 <EditText
-                    android:inputType="textPassword"
-                    android:drawableRight="@drawable/anpass"
                     style="@style/edt_dangnhap"
-                    android:hint="Mật khẩu"></EditText>
-
-                <EditText
-                    android:inputType="textPassword"
                     android:drawableRight="@drawable/anpass"
-                    style="@style/edt_dangnhap"
-                    android:hint="Nhập lại mật khẩu"></EditText>
+                    android:hint="Nhập lại mật khẩu"
+                    android:inputType="textPassword"></EditText>
 
 
             </LinearLayout>
@@ -57,12 +76,11 @@
 
 
         <Button
+            style="@style/btn_dangnhap"
             android:layout_marginTop="10dp"
-            android:text="Đăng ký"
-            style="@style/btn_dangnhap"></Button>
+            android:text="Đổi mật khẩu"></Button>
 
     </LinearLayout>
-
 
 
 </LinearLayout>

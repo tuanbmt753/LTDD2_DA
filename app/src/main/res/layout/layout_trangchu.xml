@@ -21,66 +21,179 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Tài khoản"
+            android:text="Trang chủ"
             android:textColor="#FFF"
-            android:textSize="15dp"></TextView>
+            android:textSize="16dp"></TextView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dangxuat"></ImageView>
+
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="140dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/logo"></ImageView>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="20dp"
-        android:paddingTop="25dp"
-        android:paddingRight="20dp">
-
+        android:layout_height="252dp"
+        android:background="#011432"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="94dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/giaidau"></ImageView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <EditText
-                    style="@style/edt_dangnhap"
-                    android:drawableRight="@drawable/anpass"
-                    android:hint="Mật khẩu"
-                    android:inputType="textPassword"></EditText>
-
-                <EditText
-                    style="@style/edt_dangnhap"
-                    android:drawableRight="@drawable/anpass"
-                    android:hint="Nhập lại mật khẩu"
-                    android:inputType="textPassword"></EditText>
-
-
-            </LinearLayout>
-
+                android:text="Giải đấu"
+                android:textColor="#fff"></TextView>
         </LinearLayout>
 
 
-        <Button
-            style="@style/btn_dangnhap"
-            android:layout_marginTop="10dp"
-            android:text="Đổi mật khẩu"></Button>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="94dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/doibong"></ImageView>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đội bóng"
+                android:textColor="#fff"></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="94dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cauthu"></ImageView>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cầu thủ"
+                android:textColor="#fff"></TextView>
+        </LinearLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#011432"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="94dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/vs"></ImageView>
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trận đấu"
+                android:textColor="#fff"></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="94dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/taikhoan"></ImageView>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản"
+                android:textColor="#fff"></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="94dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/thongke"></ImageView>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Thống kê giải đấu"
+                android:textColor="#fff"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
 
 
 </LinearLayout>
