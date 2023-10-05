@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_width="140dp"
+        android:layout_height="80dp"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="25dp"
+        android:paddingRight="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    style="@style/edt_dangnhap"
+                    android:hint="@string/email"></EditText>
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:drawableRight="@drawable/anpass"
+                    style="@style/edt_dangnhap"
+                    android:hint="Mật khẩu"></EditText>
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:drawableRight="@drawable/anpass"
+                    style="@style/edt_dangnhap"
+                    android:hint="Nhập lại mật khẩu"></EditText>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:text="Đăng ký"
+            style="@style/btn_dangnhap"></Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
